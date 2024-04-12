@@ -44,27 +44,27 @@ with smtplib.SMTP(smtp_server_google, smtp_port_google) as server: #17:
     print('E-mail enviado com sucesso!')
 
 
-#1: Vou precisar das informações do meu ".env".
-#2: Lembrando que não consegui importar o "load_dotenv".
-#3: Se a variável de ambiente não estiver definida, o segundo argumento é retornado como um valor padrão (string vazia).
-#4: O destinatário será o remetente.
-#5: Está buscando a senha dentro do ".env".
-#6: Está buscando o login dentro do ".env".
-#7: "email" é biblioteca principal e "mime" é um submóduo dentro dela.
-#8: É usada para criar mensagens de e-mail MIME multipart.
-#9: O MIME (Multipurpose Internet Mail Extensions) é um padrão da Internet que estende o formato de e-mail para suportar mensagens de texto em caracteres não-ASCII, além de outros tipos de dados como imagens, áudio e vídeo. O MIME permite que os e-mails contenham diferentes partes, cada uma com seu próprio tipo de conteúdo. A classe MIMEMultipart é usada para criar mensagens de e-mail que consistem em várias partes. Por exemplo, você pode ter uma parte de texto, uma parte HTML e vários anexos em uma única mensagem.
-#10: A classe MIMEText é comumente usada quando você deseja incluir uma parte de texto simples em sua mensagem de e-mail, seja como corpo da mensagem ou parte de um corpo mais complexo se a mensagem for multipart.
-#11: Criando uma instância para repsentar a parte do texto do corpo do e-mail, onde "plain" indica que o conteúdo do e-mail é texto simples. Outra opção comum seria 'html' se você estivesse formatando o corpo do e-mail como HTML.
-#12: Especifica a codificação do texto. 'utf-8' é uma escolha comum para suportar caracteres Unicode.
-#13: Substitui variáveis no modelo (template/modelagem) pelos valores fornecidos no dicionário "dados" (sem lançar exceção).
-#14: Permite adicionar uma parte de texto usando MIMEText e uma parte de anexo usando MIMEBase, e, em seguida, adicioná-las ao objeto MIMEMultipart. Isso permite a criação de e-mails mais complexos com várias partes.
-#15: Será utilizado para anexar o conteúdo de "corpo_email/MIMEText" ao MIMEMultipart().
-#16: Essa biblioteca fornece uma interface para enviar e-mails usando o protocolo SMTP.
-#17: "smtplib.SMTP" é uma classe que representa uma conexão com um servidor SMTP.
-#18: "ehlo()" é usado para cumprimentar o servidor SMTP. Significa: "Extended Hello". Ele é um passo inicial onde o cliente (seu código) comunica ao servidor que ele pretende usar extensões específicas.
-#19: Inicia uma camada de segurança TLS na conexão SMTP.
-#20: Realizando login.
-#21: Comando para enviar e-mail.
+#1: I'll need the information from my ".env".
+#2: Just a reminder that I couldn't import "load_dotenv".
+#3: If the environment variable is not defined, the second argument is returned as a default value (an empty string).
+#4: The recipient will be the sender.
+#5: It's fetching the password from within the ".env".
+#6: It's fetching the login from within the ".env".
+#7: "email" is the main library and "mime" is a submodule within it.
+#8: It's used to create multipart MIME email messages.
+#9: MIME (Multipurpose Internet Mail Extensions) is an Internet standard that extends the email format to support text messages in non-ASCII characters, as well as other data types like images, audio, and video. MIME allows emails to contain different parts, each with its own content type. The MIMEMultipart class is used to create email messages that consist of multiple parts. For example, you can have a text part, an HTML part, and several attachments in a single message.
+#10: The MIMEText class is commonly used when you want to include a simple text part in your email message, either as the body of the message or as part of a more complex body if the message is multipart.
+#11: Creating an instance to represent the text part of the email body, where "plain" indicates that the email content is plain text. Another common option would be 'html' if you were formatting the email body as HTML.
+#12: Specifies the encoding of the text. 'utf-8' is a common choice to support Unicode characters.
+#13: Substitutes variables in the template with the values provided in the "data" dictionary (without raising an exception).
+#14: Allows adding a text part using MIMEText and an attachment part using MIMEBase, and then adding them to the MIMEMultipart object. This allows the creation of more complex emails with multiple parts.
+#15: Will be used to attach the content of "email_body/MIMEText" to the MIMEMultipart().
+#16: This library provides an interface for sending emails using the SMTP protocol.
+#17: "smtplib.SMTP" is a class that represents a connection to an SMTP server.
+#18: "ehlo()" is used to greet the SMTP server. It stands for: "Extended Hello". It's an initial step where the client (your code) communicates to the server that it intends to use specific extensions.
+#19: Starts a TLS security layer on the SMTP connection.
+#20: Performing login.
+#21: Command to send email.
 
 #Link Google: https://support.google.com/accounts/answer/185833?hl=pt-BR
 #Link2 Google: https://myaccount.google.com/security

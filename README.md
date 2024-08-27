@@ -16,3 +16,5 @@ This Python program demonstrates how to send SMTP emails using Python. It utiliz
 - Set up environment variables for the email sender address and password.
 - Customize the email template and content in the file100.txt.
 - Run the Python script to send the email.
+
+https://linktr.ee/edsoncopque

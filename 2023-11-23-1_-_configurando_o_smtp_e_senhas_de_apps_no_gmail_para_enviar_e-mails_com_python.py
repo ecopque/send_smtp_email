@@ -66,5 +66,6 @@ with smtplib.SMTP(smtp_server_google, smtp_port_google) as server: #17:
 #20: Performing login.
 #21: Command to send email.
 
-#Link Google: https://support.google.com/accounts/answer/185833?hl=pt-BR
-#Link2 Google: https://myaccount.google.com/security
+# Link Google: https://support.google.com/accounts/answer/185833?hl=pt-BR
+# Link2 Google: https://myaccount.google.com/security
+# https://linktr.ee/edsoncopque

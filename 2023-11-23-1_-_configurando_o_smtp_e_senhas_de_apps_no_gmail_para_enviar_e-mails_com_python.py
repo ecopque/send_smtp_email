@@ -68,4 +68,5 @@ with smtplib.SMTP(smtp_server_google, smtp_port_google) as server: #17:
 
 # Link Google: https://support.google.com/accounts/answer/185833?hl=pt-BR
 # Link2 Google: https://myaccount.google.com/security
-# https://linktr.ee/edsoncopque
+
+# Edson Copque | https://linktr.ee/edsoncopque
